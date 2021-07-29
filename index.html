@@ -8,41 +8,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-        <title>Práctica inicial Frontend</title>
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-            html {
-                font-size: 62.5%;
-                font-family: 'Oxygen', sans-serif;
-            }
-
-            header {
-                position: relative;
-                display:inline-block;
-                width:100%;
-                max-width: 900px;
-                height: 5rem;
-                background-color: green;
-                color:ivory;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <title>Platzi Video</title>
+     
     </head>
     <body>
-        <header>
-            <h1>Platzi-Video</h1>
-            <nav>
+        <header class="header">
+            <img class="header__img" src="./assets/imgs/logo-platzi-video.png" alt="Logo Platzi Video">
+         
+            <nav class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="./assets/icons/profile.png" alt="User">
+                    <p>Perfil</p>
+                </div>
                 <ul>
-                    <li>Cuenta</li>
-                    <li>Cerrar sesión</li>
+                    <li><a href="">Cuenta</a></li>
+                    <li><a href="">Cerrar Sesión</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h2>Sección Principal</h2>
+           
         </main>
         <footer>
             <ul>
