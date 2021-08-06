@@ -19,11 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100px;
+    width: 100%;
     /* padding: 1rem 3rem 0 2rem;  */
 }
 
 .header__img {
-    width: 20rem;
+    width: 200px;
     margin: 18px 30px;
 }
 
@@ -39,7 +40,7 @@ header {
         flex-direction: column;
         place-content:  center space-around;
         align-items: center;
-    min-height: 700px;
+    max-height: 1000px;
     width: 436px;
     padding: 60px 68px 40px;
     border: 3px solid #FBF7F0;
@@ -71,6 +72,7 @@ header {
     justify-content: space-between;
     width: 100%;
     /* margin-top: 10px; Solo si no uso space-around en el justify content del padre */
+    text-align: center;
 }
 
 .login__container--form  label {
@@ -104,6 +106,7 @@ header {
 
 .login__container--register {
     font-size: 14px;
+    text-align: center;
 }
 
 .login__container--register a {
@@ -176,4 +179,26 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 80px;
+    }
+    .header img {
+        width: 150px;
+    }
+    .login__container {
+        background-color: transparent;
+        border:none;
+        padding: 0px 25px 30px;
+        width: 90%;
+        min-width: 300px;
+        min-height: 600px;
+    }
+    .footer {
+        height: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
